@@ -1,0 +1,611 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+body,html{
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.colori{
+    color: #f4f4f4;
+}
+
+.home-content h1{
+    font-size: 60px;
+    color:#f4f4f4;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.home-content h1::after{
+    content:"|";
+    animation-name: typing;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    color: #f4f4f4;
+
+}
+@keyframes typing{
+    0% {content:"|";}
+    1% {content:"l|";}
+    2% {content:"la|";}
+    4% {content:"lar|";}
+    5% {content:"larr|";}
+    6% {content:"larry|";}
+    7% {content:"larry D|";}
+    8% {content:"larry Da|";}
+    9% {content:"larry Dan|";}
+    10% {content:"larry Dani|";}
+    11% {content:"larry Danie|";}
+    12% {content:"larry Daniel|";}
+    13% {content:"larry Daniels|";}
+    14% {content:"larry Daniel|";}
+
+    15% {content:"larry Danie|";}
+    16% {content:"larry Dani|";}
+    17% {content:"larry Dan|";}
+    18% {content:"larry Da|";}
+    19% {content:"larry D |";}
+    20% {content:"larry |";}
+    21% {content:"larr|";}
+    22% {content:"lar|";}
+    23% {content:"la|";}
+    24% {content:"l|";}
+    25% {content:"S|";}
+    26% {content:"D|";}
+    27% {content:"De|";}
+    28% {content:"Dev|";}
+    29% {content:"Deve|";}
+    30% {content:"Devel|";}
+    31% {content:"Develo|";}
+    32% {content:"Develop|";}
+    33% {content:"Develope|";}
+    34% {content:"Developer|";}
+    35% {content:"Develope|";}
+    36% {content:"Develop|";}
+    37% {content:"Develo|";}
+    38% {content:"Devel|";}
+    39% {content:"Deve|";}
+    40% {content:"Dev|";}
+    41% {content:"De|";}
+    42% {content:"D|";}
+    43% {content:"D|";}
+    44% {content:"De|";}
+    45% {content:"Des|";}
+    46% {content:"Desi|";}
+    47% {content:"Desig|";}
+    48% {content:"Design|";}
+    49% {content:"Designe|";}
+    50% {content:"Designer|";}
+    51% {content:"Designe|";}
+    52% {content:"Design|";}
+    53% {content:"Desig|";}
+    54% {content:"Desi|";}
+    55% {content:"Des|";}
+    56% {content:"De|";}
+    57% {content:"D|";}
+
+58% {content:"l|";}
+   59%{content:"la|";}
+   60%{content:"lar|";}
+   61% {content:"larr|";}
+ 62% {content:"larry|";}
+   63% {content:"larry D|";}
+   64% {content:"larry Da|";}
+  65% {content:"larry Dan|";}
+  66% {content:"larry Dani|";}
+   67%{content:"larry Danie|";}
+    68%{content:"larry Daniel|";}
+  69% {content:"larry Daniels|";}
+   70%  {content:"larry Daniel|";}
+
+   72%{content:"larry Danie|";}
+   74% {content:"larry Dani|";}
+   75% {content:"larry Dan|";}
+   77% {content:"larry Da|";}
+   78% {content:"larry D |";}
+   80% {content:"larry |";}
+   81% {content:"larr|";}
+   83% {content:"lar|";}
+   85% {content:"la|";}
+   86% {content:"l|";}
+   88% {content:"S|";}
+   89% {content:"D|";}
+   91% {content:"De|";}
+   92% {content:"Dev|";}
+   94% {content:"Deve|";}
+   95% {content:"Devel|";}
+   97% {content:"Develo|";}
+   98% {content:"Develop|";}
+   100% {content:"Develope|";}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+ 
+
+
+   
+
+
+
+
+
+
+
+.home{
+
+
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../imgs/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+nav .nav-link:focus, nav .nav-link:hover {
+    color: #f4f4f4;
+    width: 100%;
+ 
+} 
+
+nav .navbar-nav .nav-link.active,nav .navbar-nav .nav-link.show {
+    color:#f4f4f4;
+    font-weight: 500;
+    }
+    nav .nav-link {
+        color: white;
+        letter-spacing: 1.9;
+        font-weight: 500;
+        position: relative;
+    } 
+    nav .nav-link.active::after{
+width: 100%;
+    }
+
+    nav .nav-link::after{
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition:  0.3s;
+    }
+
+
+
+
+
+/* START about SECTION  */
+.spanabout{
+    color:#5b5b5b;
+}
+
+.layerborder{
+    background-image: url(../imgs/dots.png);
+   
+}
+
+.img{
+  bottom: 20px;
+   left:2%;
+  
+   position: relative;
+  
+}
+.progress1 .progress-bar{
+    width: 95%;
+    background-color: #1C1C1C;
+    box-shadow:0px 2px 7px rgba(0, 0, 0, 0.15);  
+    border-radius: 5px;
+    
+}
+
+
+.progress2 .progress-bar{
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    width: 80%;
+    box-shadow:0px 2px 7px rgba(0, 0, 0, 0.15);  
+}
+
+
+.progress3 .progress-bar{
+    border-radius: 5px;
+    background-color: #1C1C1C;
+    width: 90%;
+}
+.progress{
+    height: 24px;
+  
+ box-shadow:0px 2px 7px rgba(0, 0, 0, 0.15) inset;  
+ background-color: #f7f7f7; 
+}
+.num{
+    transform: translate(50%,20%);
+
+}
+.pargrh{
+    transform: translate(-100%,-100%);
+}
+
+.btn-outline-light{
+    
+    background-color: #111;
+ 
+}
+.btn-outline-light:hover{
+    border: #111 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* end about */
+
+/* START SERIVCE SECTION  */
+.icon{
+border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(0,0,0,0.6);
+}
+.texttitle{
+    max-width: 400px;
+    text-align: center;
+    padding: 50px;
+}
+
+.myimage{
+    width: 5rem;
+    height: 5rem;
+}
+
+.item{
+border-radius: 6px;
+}
+.item:hover .iconcontact {
+    background-color: #111;
+    color: #F7F7F7;
+    }
+
+ .headtitle{
+    
+    background-image: url(../imgs/dots.png);
+}
+
+/* h3::after{
+    content: "";
+    position: absolute;
+    width: 55px;
+height: 40px;
+   background-image: url(../imgs/dots.png);
+   left: 50px;
+    
+} */
+  /* h3:after {
+    content: "";
+    width: 100%;
+    /* height: 30px;
+    /* background-image: url(../imgs/dots.png); */
+  
+/* .g{
+    z-index: 20;
+} */ 
+
+/* END SERIVCE */
+
+
+
+
+/* .nav-tabs .nav-link {
+
+border:0px;
+color:#222;
+font-weight: bolder;
+
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+    color:#222;
+} */
+
+
+
+/* START WORK SECTION  */
+.nav-link:focus, .nav-link:hover {
+    color:  #222; 
+  
+}
+
+
+
+#Works .nav-pills .nav-link.active { 
+    background-color: transparent;
+    color:#222;
+   
+}
+
+#Works button.active::after { 
+   content: "";
+   width: 50%;
+   height: 3px;
+   position: absolute;
+   background-color:#222; 
+   left: 50%;
+   right: 0;
+   bottom: 0;
+   transform: translateX(-50%);
+transition: all 4s;
+   
+}
+#Works .nav-link:hover .active::after{
+    transform: translateX(-50%);
+}
+#Works .active{
+    position: relative;
+}
+#Works  .nav-link{
+    color: #222;
+  font-weight: bolder;
+  
+}
+
+/******** */
+.layer{
+    position: absolute;
+    top:5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+ background-color:rgb(255, 255, 255,0.96) ;
+    transform: translatey(7px);
+opacity: 0;
+transition: all 0.5s;
+
+}
+.biglayer:hover .layer{
+opacity: 1;
+transform: translateY(0px);
+
+
+}
+.biglayer:hover .workicon{
+transform: translateY(0px);
+}
+.workicon{
+    transition: all 0.5s;
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+.biglayer h6{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
+
+.biglayer:hover h6{
+    transform: translateY(0px);
+}
+.icon1,.icon2{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #111;
+    border:#111 solid ;
+    border-width: 1px;
+}
+
+.icon1:hover,.icon2:hover{
+    color: #111; 
+    background-color:  #FDFDFD;
+    border:#111 solid ;
+    border-width: 1px;
+}
+
+/* END WORK */
+
+/* start client */
+
+.layercarsol{
+background-color: #F7F7F7;
+}
+
+
+.textcarsol{
+    width: 80%;
+    color: #869791;;
+}
+.carousel-indicators [data-bs-target] {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color:#BBC1C1;
+    margin-left: 10px;
+}
+.carousel-indicators .active {
+
+background-color: #869791;
+
+
+}
+.carousel-indicators [data-bs-target]:hover {
+    background-color: #869791;
+    
+}
+
+
+.colorh{
+   color: #343434;
+}
+.span{
+    color: #869791;
+}
+
+
+
+/* end client */
+
+
+/* start customwe */
+
+
+
+
+
+
+   
+/* end customer */
+
+/* START TEAM  */
+
+
+ #team .card-img, .card-img-top {
+    border-radius: 0px;
+
+} 
+#team .card{
+    border-radius: 0px;
+    border: transparent solid 0px;
+     position: relative; 
+}
+#team .card-body {
+    border-radius: 0px 0px 8px 8px;
+    padding-bottom: 20px;
+  
+}
+.colorbody{
+  background-color:   #5b5b5b;
+}
+
+
+
+/* .titlecard{
+    border-radius: 0px 0px 8px 8px;
+    background-color:   #5b5b5b;
+
+} */
+.imagcard{
+    background-color:rgb(255, 255, 255,0.95) ;
+    position: absolute;
+    top:5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+transition: all 0.5s;
+opacity: 0;
+z-index: 20;
+}
+.card:hover .imagcard{
+    transform: rotatey(180deg);
+    opacity: 1;
+}
+.all{
+    position: relative;
+
+    overflow: hidden;
+}
+
+.all:hover img{
+    transform: scale(1.2);
+}
+#team img{
+transition: all 0.5s;
+}
+
+.rotateicon{
+    transform: rotateY(180deg);
+}
+
+
+.iconcard{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color:black;
+    border-radius: 50%;
+    color: white;
+}
+
+#team .iconcard:hover {
+    color: #111; 
+    background-color:  #FDFDFD;
+    border:#111 solid ;
+    border-width: 1px;
+}
+
+
+/* END TEAM */
+/* start contact */
+.iconcontact{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color:#f4f4f4;
+   transition: all 0.5s ease 0s;
+  
+}
+.contactcaption:hover .iconcontact {
+background-color: #111;
+color: #F7F7F7;
+}
+
+.area{
+    color: #5b5b5b;
+ 
+}
+.form-control{
+    background-color: #f4f4f4;
+}
+ 
+
+/* end contact */
+.footer{
+    background-color: #1C1C1C;
+}
+.titlefooter{
+color:#869791
+}
